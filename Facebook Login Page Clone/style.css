@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.logo{
+    width: 350px;
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.main{
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-top: 40px;
+    background-color: #f0f2f5;
+}
+.form-box{
+   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   
+}
+.login{
+    
+    font-size: 1.2rem;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+input{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 15px;
+}
+button{
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+    color: white;
+    
+
+}
+
+.style{
+    margin-top: 10px;
+}
+.button1 button{
+    width: 325px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.button2 button{
+    background-color: green;
+    border-radius: 5px;
+}
+
