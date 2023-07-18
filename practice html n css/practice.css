@@ -1,0 +1,29 @@
+
+.header {
+    background-color: bisque;
+    width: 4000px;
+    height: 100px;
+    margin: 40px;
+}
+.suresh{
+    background-color: yellowgreen;
+    width: 50px;
+    height: 100px;
+    margin: 40px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row; */
+     justify-content: space-around;  /*it take horizontal space and space around will maintain display the responsive   */
+     align-items: center;  /* it take vertical space and we can set the position  */
+    
+}
+a{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* dispaly:
+    justify-content:
+    align-item: 
+    flex-wrap:             */

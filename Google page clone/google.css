@@ -1,0 +1,58 @@
+
+  .container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+  .topstyle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .topstyle a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .topstyle img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  header {
+    padding: 10px;
+    display: inline-block;
+
+  }
+  
+  img {
+    height: 80px;
+    margin-right: 10px;
+  }
+  .container1 input[type="text"] {
+    border-radius: 30px;
+  }
+  
+  
+  #search-bar {
+    width: 600px;
+    height: 33px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
