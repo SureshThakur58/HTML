@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loginpage</title>
+    <title>Login and Register page</title>
     <link rel="stylesheet" href="loginstyle.css">
 </head>
+
 <body>
-    <div class="header1">
-        <div class="logo1">
-            <img src="image/logo.png" width="125px">
+    <div class="account_page">
+        <div><img src="image/logo.png" alt=""></div>
+        <div class="header">
+            <div class="container1">
+                <img src="image/form_img.png" width="380px" >
+            </div>
+            <div class="form-container2">
+                <div class="form-btn">
+
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+                </div>
+
+                <form id="Regform" action="">
+                    <input type="email" name="email" placeholder="email">
+                    <input type="password" name="password" placeholder="password">
+                    <input id="btn" type="button" name="register" value="Login">
+                    <a href="#">Forgot password</a>
+                </form>
+                <form id="Loginform" action="">
+                    <input type="text" name="fullname" placeholder="Fullname">
+                    <input type="email" name="email" placeholder="email">
+                    <input type="password" name="password" placeholder="password">
+                    <input id="btn" type="button" name="resister" value="Register">
+                </form>
+            </div>
         </div>
-        <div class="col-2">
-            <img src="image/image1.png">
-        </div>
-        <p>Hello</p>
     </div>
+
+
+
+    <!-------- JS for toggle form --------->
+
+    <script>
+
+        var LoginForm = document.getElementById("Loginform")
+        var RegForm = document.getElementById("Regform")
+        var Indicator = document.getElementById("indicator")
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(110px)"
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)"
+        }
+
+    </script>
 </body>
+
 </html>
