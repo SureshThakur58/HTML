@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Mouse Position</title>
+</head>
+<body>
+   <h3>X: <span id="x-value"></span></h3>
+   <h3>Y:<span id="y-value">Y:</span></h3>
+
+
+
+    <script>
+  document.addEventListener('mousemove',function(event){
+   document.getElementById("x-value").innerText= event.x;
+   document.getElementById("y-value").innerText= event.y;
+  });
+    </script>
+</body>
+</html>

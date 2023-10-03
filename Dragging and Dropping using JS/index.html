@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Dragging and Dropping</title>
+    <style>
+        #fill{
+           border: 1px solid black;
+           width: 60px;
+        }
+        #empty{
+            border: 1px solid black;
+            width: 60px;
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="fill" draggable="true"> Suresh</div> 
+   <br>
+   <div id="empty" draggable="true">   </div>
+
+   <script>
+      var vfill=document.getElementById("fil");
+      var vempty=document.getElementById("empty");
+
+      vempty.addEventListener('dragover',abc);
+      function abc(){
+        vempty.setAttribute('id','fill');
+        vfill.setAttribute('id','empty');
+      }
+
+      vfill.addEventListener('dragover',xyz);
+      function xyz(){
+        vempty.setAttribute('id','empty');
+        vfill.setAttribute('id','fill');
+      }
+     
+
+    </script>
+</body>
+</html>

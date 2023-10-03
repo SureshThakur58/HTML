@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+   
+</head>
+<body>
+    <form name="registrationForm" action="register.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br>
+        <input type="submit" value="Register">
+    </form>
+     <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var age = document.getElementById("age").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            if (name === "" || password === "" || age === "" || email === "" || phone === "") {
+                alert("All fields are required.");
+                return false;
+            }
+
+            if (isNaN(age) || age < 18) {
+                alert("Age must be a number and at least 18.");
+                return false;
+            }
+
+            var phonePattern = /^[0-9]{10}$/;
+            if (!phone.match(phonePattern)) {
+                alert("Phone number should be 10 digits.");
+                return false;
+            }
+
+            return true;
+
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if (!email.match(emailPattern)) {
+                alert("Invalid email format. Please enter a valid email address.");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
